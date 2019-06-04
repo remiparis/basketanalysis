@@ -1,3 +1,4 @@
+install.packages("plyr")
 install.packages("arules")
 install.packages("shiny")
 install.packages("shinythemes")
@@ -14,4 +15,3 @@ install.packages("visNetwork")
 install.packages("dplyr")
 install.packages("magrittr")
 install.packages("arulesViz")
-
