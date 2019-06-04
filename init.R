@@ -1,17 +1,14 @@
-install.packages("Cairo", dependencies = TRUE)
-install.packages("plyr")
-install.packages("arules")
-install.packages("shiny")
-install.packages("shinythemes")
-install.packages("data.table")
-install.packages("ggplot2")
-install.packages("ggthemes")
-install.packages("viridis")
-install.packages("extrafont")
-install.packages("DT")
-install.packages("plotly")
-install.packages("igraph")
-install.packages("visNetwork")
-install.packages("dplyr")
-install.packages("magrittr")
-install.packages("arulesViz")
+# init.R
+#
+# Example R code to install packages if not already installed
+#
+
+my_packages = c("Cairo","plyr","arules","shiny","shinythemes","data.table","ggplot2","ggthemes","viridis","extrafont","DT","plotly","igraph","visNetwork","dplyr","magrittr","arulesViz")
+
+install_if_missing = function(p) {
+  if (p %in% rownames(installed.packages()) == FALSE) {
+    install.packages(p)
+  }
+}
+
+invisible(sapply(my_packages, install_if_missing))
