@@ -1,3 +1,4 @@
+options(bitmapType='cairo')
 options(shiny.maxRequestSize = 1000*1024^2) 
 
 function(input, output, session){
